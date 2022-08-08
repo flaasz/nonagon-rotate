@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EMBED STUFF -->
+    <meta property="og:title" content="Purplik's Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://PurplikDev.github.io/">
+    <meta property="og:image" content="https://purplikdev.github.io./images/purplik-nonagon.png">
+    <meta property="og:description" content="I have no idea what I'm doing please help me">
+    <meta name="theme-color" content="#151515">
+
+    <link href="https://purplikdev.github.io/css/mainStyle.css" rel="stylesheet">
+    <link href="https://purplikdev.github.io/css/headerStyle.css" rel="stylesheet">
+
+    <title>Purplik</title>
+    <link rel="icon" type="image/x-icon" href="https://purplikdev.github.io/images/purplik.png">
+
+
+    <!--FLASZ MAGIC-->
+    <style>
+        #profile-picture {
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            animation: clipRotateAnim 7s linear infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #profile-picture:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("https://purplikdev.github.io/images/purplik-nonagon.png");
+            background-size: cover;
+            animation: inherit;
+            animation-direction: reverse;
+
+        }
+
+        @keyframes clipRotateAnim {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+
+    <!--END OF FLASZ MAGIC-->
+
+
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="header-name">PurplikDev.github.io</h1>
+        <div id="header-menu">
+            <h2>Home</h2>
+            <h2>About</h2>
+            <h2>Projects</h2>
+        </div>
+    </div>
+
+    <div id="display-block">
+
+        <div id="main-block">
+            <div id="profile-picture"></div>
+            <h1 id="username">Purplik</h1>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
